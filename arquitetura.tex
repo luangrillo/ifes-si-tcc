@@ -1,0 +1,108 @@
+\documentclass[arial,english,brazil,oneside]{estiloifes}
+
+\usepackage[utf8]{inputenc}
+\usepackage{lastpage}           % Usado pelo exemplo de ficha catalográfica
+\usepackage[alf]{abntex2cite}
+\usepackage{microtype}          % para melhorias de justificação
+\usepackage{morefloats}         % permite mais floats
+\usepackage{listings}
+\usepackage{blindtext}          % para gerar texto aleatório (dummy text)
+\usepackage{tikz}
+\usetikzlibrary[topaths]
+\usepackage{mathtools}
+\usepackage{float}
+\usepackage{setspace}
+\usepackage{quoting}
+\usepackage{setspace}% http://ctan.org/pkg/{setspace,lipsum}
+
+
+
+
+
+
+%\setlist{parsep=\parskip,leftmargin=1.5cm}
+\renewcommand{\baselinestretch}{1.5}
+%%% Definição da linguagem padrão do documento (pacote babel) para
+%%% definir que certas porções do texto (como o resumo, por exemplo)
+%%% estão em uma língua estrangeira, usar as macros
+%%% \foreignlanguage{languageB}{Text in another language}
+%%% ou
+%%% \begin{otherlanguage}{languageB}
+%%% ...
+%%% \end{otherlanguage}
+\selectlanguage{brazil}
+
+
+%%% Define que todos os códigos fontes construídos com o ambiente
+%%% `lstlisting' terão uma borda simples.
+\lstset{frame=single}
+
+
+\newcommand{\ifestex}{\textsf{Ifes$7$}}
+
+\titulo{Arquitetura distribuída para APIs de Machine Learning}
+
+\autor{Luan Grillo Silva}
+\autorficha{Silva, Luan Grillo}
+
+\orientador{DSc. Eros Moura}
+
+
+\instituicao{IFES - Instituto Federal do Espírito Santo}
+
+\curso{Bacharelado em Sistemas de Informação}
+
+\data{2022}
+
+\local{Cachoeiro de Itapemirim - ES}
+
+\preambulo{Trabalho de Conclusão de Curso apresentado à Coordenadoria
+  do Curso de Sistemas de Informação do Instituto Federal do Espírito
+  Santo, Campus Cachoeiro de Itapemirim, como requisito parcial para a obtenção do
+  título de Bacharel em Sistemas de Informação.}
+
+\tipotrabalho{Trabalho de Conclusão de Curso}
+
+
+\begin{document}
+
+
+
+\imprimircapa
+
+\imprimirfolhaderosto*
+
+%\include{ficha}
+
+%\include{aprovacao}
+%\include{declaracaoautor}
+%\include{dedicatoria}
+%\include{agradecimento}
+%\include{epigrafe}
+\include{def/resumo}
+\include{def/abstract}
+
+%\include{listaalgoritmos}
+%\include{listafiguras}
+%\include{listatabelas}
+%\include{listaquadros}
+%\include{listaabreviaturas}
+%\include{listasimbolos}
+
+
+\include{topics/sumario}
+
+\mainmatter
+
+\include{topics/introducao}
+\include{topics/sd}
+\include{topics/apdmaq}
+%\include{topics/problematica}
+%\include{topics/classificador}
+\include{topics/conclusao}
+\include{topics/bibliografia}
+%\include{apendice}
+%\include{anexos}
+
+\end{document}
+
