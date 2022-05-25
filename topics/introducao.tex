@@ -2,19 +2,14 @@
 
 \chapter{\textbf{Introdução}} % Este comando é utilizado para criar capítulos
 
-A construção de um projeto de aprendizado de máquina envolve alta complexidade, cada projeto é único, incluindo seus requisitos. A busca por metodologias que melhorem as lacunas de uma arquitetura é essencial para grandes projetos, após a fase de prototipagem, a arquitetura geral do projeto deve ser pensada com cuidado, pois resultará diretamente no custo final de implantação. Para isso, uma pesquisa com uma forma distribuída e compartilhada de recursos para o projeto pode se tornar essencial para a execução de projetos.
+Com a exponencial de crescimento do poder de processamento dos computadores juntamente com a baixa do custo desses equipamentos forneceu um cenário ideal para a construção de redes extremamente complexas e descentralizadas. Segundo \cite{vanSteen1999}, o resultado da tecnologia atual é que agora se torna ainda mais possível uma arquitetura composta por inúmeros computadores em rede, de proporções inimagináveis.\par
+Esse avanço possibilitou a conexão de todo o globo, encurtando distâncias, as redes de computadores distribuídas se tornaram um pilar essencial para a possibilidade de distribuição de uma complexa gama de serviços, hoje, fenômeno irreversível. Portanto, os sistemas distribuídos são conjunto de computadores independentes que se apresentam ao usuário como um sistema único e coerente \cite{vanSteen2016}. \par
+A utilização de sistemas distribuídos nesta arquitetura será o ponto chave como objeto de estudo. Possibilitando a utilização de uma arquitetura distribuída, baseada em micro serviços, escalável, e que se comporte de forma suscetível a falhas.
 
-\section{Motivação}
-
-A motivação de pesquisa para esse tema surgiu durante a atuação em um projeto que utiliza um algoritmo de machine learning para fornecer uma  predição, aplicação disponibilizada a partir de uma API RESTful. O resultado da predição deve ser entregue com baixo tempo de resposta. A criação de uma arquitetura estável e escalável torna-se indispensável para o crescimento de grande parte dos projetos.\par
-Na fase de expansão do projeto foi constatado um aumento do custo computacional em relação à sua expansão a novos clientes. O custo computacional tornou exponencial a quantidade de clientes atendidos, gerando grandes problemas, desde a dificuldade de escala do projeto, problemas de custo e baixa eficiência.\par
-Durante a análise foi levantado que um dos principais problemas de escala desta aplicação é durante o armazenamento de estruturas de dados na memória. Os chamados modelos, são gerados a partir de uma etapa denominada treinamento, no qual uma grande quantidade de dados são processados por algoritmos de machine learning e, o retorno desse processamento é utilizado em para determinar a predição de certos tipos de informações.\par
 
 \section{A problematica}
-O intuito é fornecer ao final deste artigo um levantamento de referencial bibliográfico para construção de uma arquitetura distribuída de que contemple os seguintes requisitos, a escalabilidade, que define um projeto com capacidade de crescimento baseado na demanda e carga de trabalho, redundância, capacidade de ser flexível e tolerante a problemas, e uma boa relação custo-benefício.\par 
-Os desafios de construção da arquitetura estão diretamente relacionados à proposta do projeto, em alguns casos, os recursos variam como processamento e memória, em alguns casos específicos, existe a necessidade de processadores gráficos para o processamento de alguns algoritmos de machine learning.\par
-Em projetos que são compostos de inúmeros modelos a escalabilidade é afetada diretamente, pois exigem requerimentos mais altos para a execução do projeto. Visando a  solucionar esse problema, a criação de uma arquitetura que distribua esses modelos de forma descentralizada e compartilhada será a solução em estudo, o que poderá aumentar a eficiência desse ecossistema.\par
-A distribuição de recursos computacionais em aplicações que demandam baixos tempos de resposta é diretamente atrelado ao algoritmo utilizado e suas complexidades. Suas excentricidades são desde o custo computacional, uso de memória primária para execução, uso da memória primária para armazenamento dos modelos  e tempo de execução.\par
+O intuito é fornecer ao final deste artigo um levantamento de referencial bibliográfico para construção de uma arquitetura distribuída de que contemple os seguintes requisitos, a escalabilidade, que define um projeto com capacidade de crescimento baseado na demanda e carga de trabalho, redundância, capacidade de ser flexível e tolerante a problemas, e uma boa relação custo-benefício no ambto de dispositivos de Internet das Coisas.\par 
+A distribuição de recursos computacionais em aplicações que demandam baixos tempos de resposta é diretamente atrelado ao padrão, neste caso, o pub/sub utilizado e suas complexidades.\par
 
 
 
